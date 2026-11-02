@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+	"dev": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,16 @@
   "bugs": {
     "url": "https://github.com/sumain/noderest/issues"
   },
-  "homepage": "https://github.com/sumain/noderest#readme"
+  "homepage": "https://github.com/sumain/noderest#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.24.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
