@@ -20,9 +20,13 @@ app.get('/', (req, res) => {
     });
 });
 
+
+const authRoutes = require('./routes/authRoutes');
+app.use('/api/auth', authRoutes);
+
+
 // User routes
 const userRoutes = require('./routes/userRoutes');
-
 app.use('/api/users', userRoutes);
 
 // Start server after database connection
